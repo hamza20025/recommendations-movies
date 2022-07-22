@@ -12,8 +12,7 @@ df[['Title','Category']].head()
 
 
 
-# Immporter un fichier
-from sklearn.feature_extraction.text import TfidfVectorizer
+# Immporter un fichilearnture_extractionmpo
 
 netflix_data = df.copy()
 
