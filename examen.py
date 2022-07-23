@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
-import scipy.sparse
 
 df = pd.read_csv('Films.csv')
 
