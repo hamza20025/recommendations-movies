@@ -37,11 +37,11 @@ def Table(df):
     fig=go.Figure(go.Table( columnorder = [1,2,3],
           columnwidth = [10,28],
             header=dict(values=[' Title','Category'],
-                        line_color='black',font=dict(color='black',size= 19),height=40,
+                        line_color='red',font=dict(color='black',size= 19),height=40,
                         fill_color='#dd571c',#
                         align=['left','center']),
                 cells=dict(values=[df.Title,df.Category],
-                       fill_color='#ffdac4',line_color='grey',
+                       fill_color='#ffdac4',line_color='black',
                            font=dict(color='black', family="Lato", size=16),
                        align='left')))
     fig.update_layout(height=500, title ={'text': "Top 10 Movie Recommendations", 'font': {'size': 22}},title_x=0.5
