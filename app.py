@@ -79,10 +79,6 @@ if st.button('Afficher la recommandation'):
    # st.write(recommended_movie_names[['Title', 'Category']])
     Table(recommended_movie_names)
     
-st.write('  '
-         )
-st.write(' ')
-
 
 # Pour insérer les images
 col1, col2, col3, col4, col5 = st.columns(5)
