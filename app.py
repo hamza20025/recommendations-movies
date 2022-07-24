@@ -72,7 +72,7 @@ selected_movie = st.selectbox(
     movie_list
 )
 
-session.slider_count = st.slider(label="Le nombre de films a recommandé", min_value=5, max_value=50)
+ Table(recommended_movie_names).slider_count = st.slider(label="Le nombre de films a recommandé", min_value=5, max_value=50)
 
 if st.button('Afficher la recommandation'):
     recommended_movie_names = get_recommendations(selected_movie)
