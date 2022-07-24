@@ -44,8 +44,8 @@ def Table(df):
                        fill_color='#ffdac4',line_color='black',
                            font=dict(color='black', family="Lato", size=16),
                        align='left')))
-    fig.update_layout(height=500, title ={'text': "Top 10 Movie Recommendations", 'font': {'size': 22}},title_x=0.5
-                     )
+    ***fig.update_layout(height=500, title ={'text': "Top 20 Movie Recommendations", 'font': {'size': 22}},title_x=0.5
+                     )***
     return st.plotly_chart(fig,use_container_width=True)
 movie_list = netflix_data['Title'].values
 
