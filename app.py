@@ -27,7 +27,7 @@ def get_recommendations(Title, cosine_sim=cosine_sim):
     idx = indices[Title]
     sim_scores = list(enumerate(cosine_sim[idx]))
     sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
-    sim_scores = sim_scores[1:15]
+    sim_scores = sim_scores[1:21]
     movie_indices = [i[0] for i in sim_scores]
     return netflix_data.iloc[movie_indices]
 
@@ -44,7 +44,7 @@ def Table(df):
                        fill_color='#ffdac4',line_color='black',
                            font=dict(color='black', family="Lato", size=16),
                        align='left')))
-    fig.update_layout(height=500, title ={'text': "10 meilleurs films recommandés", 'font': {'size': 22}},title_x=0.5
+    fig.update_layout(height=500, title ={'text': "20 meilleurs films recommandés", 'font': {'size': 22}},title_x=0.5
                      )
     return st.plotly_chart(fig,use_container_width=True)
 movie_list = netflix_data['Title'].values
