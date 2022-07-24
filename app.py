@@ -66,10 +66,13 @@ st_lottie(
     loop=True,
     quality="low",height=220
 )
+
 selected_movie = st.selectbox(
     "Tapez ou sélectionnez un film dans la liste déroulante",
     movie_list
 )
+
+session.slider_count = t.slider(label="Le nombre de films a recommandé", min_value=5, max_value=50)
 
 if st.button('Afficher la recommandation'):
     recommended_movie_names = get_recommendations(selected_movie)
