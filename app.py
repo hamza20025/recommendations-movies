@@ -37,7 +37,7 @@ def Table(df):
     fig=go.Figure(go.Table( columnorder = [1,2,3],
           columnwidth = [10,28],
             header=dict(values=[' Title','Category'],
-                        line_color='red',font=dict(color='black',size= 19),height=40,
+                        line_color='black',font=dict(color='black',size= 19),height=40,
                         fill_color='#dd571c',#
                         align=['left','center']),
                 cells=dict(values=[df.Title,df.Category],
